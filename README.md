@@ -14,15 +14,17 @@ ngrok http 3000
 ```
 
 4. Copy the URL populated by ngrok and append "/webhook" to the end (ex. `<URL>.ngrok-free.app/webhook`):
+
 ![wise1](https://github.com/user-attachments/assets/93cc5092-4bbb-43bf-ba31-4911fa50ff7a)
 
-5. Log into [Wise](https://sandbox.transferwise.tech/home) and navigate to Settings -> Developer Tools -> Webhooks -> Create New Webhook:
+6. Log into [Wise](https://sandbox.transferwise.tech/home) and navigate to Settings -> Developer Tools -> Webhooks -> Create New Webhook:
 
-6. Input a `Name` of your choosing and paste the URL from step 4 in `URL`, then select "Create Webhook":
+7. Input a `Name` of your choosing and paste the URL from step 4 in `URL`, then select "Create Webhook":
+
 ![Wise2](https://github.com/user-attachments/assets/2316bbb4-35eb-4a67-9bed-0133b2a5b85f)
 
 
-7. In a new terminal, start your node.js server with:
+9. In a new terminal, start your node.js server with:
 ```sh
 node webhookHandler.js
 ```
@@ -32,6 +34,7 @@ node webhookHandler.js
 ## Examples
 
 Events from a transfer that was successfully funded via balance:
+
 ![Capture11](https://github.com/user-attachments/assets/17fd339f-cc6b-4b9c-96be-b666089c3b60)
 
 

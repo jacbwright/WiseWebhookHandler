@@ -40,4 +40,6 @@ Events from a transfer that was successfully funded via balance:
 
 ## Additional Notes
 
+Before you can run the code, you may need to install dependencies such as `express` and `node-forge` to your environment if you don't already have them. 
+
 Per the [documentation](https://docs.wise.com/api-docs/features/webhooks-notifications/event-handling), clients are expected to implement signature verification to ensure any request was sent by Wise and has not been forged or tampered with. This logic was removed from my code due to intermittent issues I did not have time to resolve. For the sake of a simple happy-path demonstration, this process is not currently implemented but can easily be added in the future. 
